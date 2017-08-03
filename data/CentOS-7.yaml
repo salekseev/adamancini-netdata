@@ -1,3 +1,27 @@
 ---
 netdata::service_provider: 'systemd'
 netdata::service_file: 'netdata.service'
+netdata::dependencies_pkgs:
+  - autoconf-archive
+  - autoconf
+  - autogen
+  - automake
+  - curl
+  - gcc
+  - git
+  - libmnl-devel
+  - make
+  - pkgconfig
+  - uuid-devel
+  - zlib-devel
+netdata::install_plugin_dependencies: true
+netdata::plugin_dependencies_pkgs:
+  - iproute
+  - python
+  - pyYAML
+  - MySQL-python
+  - python-psycopg2
+  - nodejs
+  - lm_sensors
+  - libmnl
+  - nmap-ncat
